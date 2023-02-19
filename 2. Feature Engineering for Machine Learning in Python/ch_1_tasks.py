@@ -1,4 +1,5 @@
 
+#---------------------------- Part 1 ------------------------------------------------
 # >> Getting to know your data
 
 # Import pandas
@@ -26,7 +27,8 @@ so_numeric_df = so_survey_df.select_dtypes(include=['int','float'])
 # Print the column names contained in so_survey_df_num
 print(so_numeric_df.columns)
 
-#-------------------------------------------------
+
+#---------------------------- Part 2 ------------------------------------------------
 
 # >> One-hot encoding and dummy variables
 
@@ -55,7 +57,7 @@ countries[mask] = 'Other'
 # Print the updated category counts
 print(countries.value_counts())
 
-#-------------------------------------------------
+#---------------------------- Part 3 ------------------------------------------------
 # >> Binarizing columns
 
 # Create the Paid_Job column filled with zeros
@@ -67,7 +69,8 @@ so_survey_df.loc[so_survey_df['ConvertedSalary']>0, 'Paid_Job'] = 1
 # Print the first five rows of the columns
 print(so_survey_df[['Paid_Job', 'ConvertedSalary']].head())
 
-#-------------------------------------------------
+
+#----------------------------------------------------------------------------
 # >> Binning values
 
 #part 1
