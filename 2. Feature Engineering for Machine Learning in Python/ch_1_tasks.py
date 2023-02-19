@@ -1,5 +1,5 @@
 
-#---------------------------- Part 1 ------------------------------------------------
+#---------------------------- Part 1: Why Generate Features? ------------------------------------------------
 # >> Getting to know your data
 
 # Import pandas
@@ -28,7 +28,7 @@ so_numeric_df = so_survey_df.select_dtypes(include=['int','float'])
 print(so_numeric_df.columns)
 
 
-#---------------------------- Part 2 ------------------------------------------------
+#---------------------------- Part 2: Dealing with Categorical Features ------------------------------------------------
 
 # >> One-hot encoding and dummy variables
 
@@ -57,7 +57,7 @@ countries[mask] = 'Other'
 # Print the updated category counts
 print(countries.value_counts())
 
-#---------------------------- Part 3 ------------------------------------------------
+#---------------------------- Part 3: Numeric Variables ------------------------------------------------
 # >> Binarizing columns
 
 # Create the Paid_Job column filled with zeros
